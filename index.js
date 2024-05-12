@@ -7,6 +7,12 @@ app.get("/", function (req, res) {
     Error: false,
   });
 });
+app.get("/home", function (req, res) {
+  res.send({
+    Message: "New data home",
+    Error: false,
+  });
+});
 
 app.listen(2000, ()=>{
     console.log("Server is running on port 2000");
