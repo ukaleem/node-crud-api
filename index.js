@@ -23,7 +23,7 @@ app.use('/api/products',productRoutes)
 // Connect to database
 mongoose
 .connect(
-  `mongodb+srv://ukaleem540:${environment.pw}@crud-apis.3svbori.mongodb.net/?retryWrites=true&w=majority&appName=Crud-apis`
+  `mongodb+srv://ukaleem540:${ environment.pw }@crud-apis.3svbori.mongodb.net/?retryWrites=true&w=majority&appName=Crud-apis`
   )
   .then((res) => {
     console.log("Database is connected");
